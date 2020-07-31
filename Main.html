@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div id="topMenu">
+                &nbsp;&nbsp;&nbsp;<span style="font-family: 'Source Code Pro', monospace;">{code:/}</span><span id="info" onclick="infoClick();">?</span>
+            </div>
+        </div>
+        <div id="displayContainer">
+            <div id="display" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                <span style="color: rgb(0, 0, 0, 0);"></span>
+                <div id="Player">id:<br/>Player</div>
+                <div id="Enemy">id:<br/>Enemy</div>
+                <div id="Obstacle1">id:<br/>Obstacle1</div>
+                <div id="Obstacle2">id:<br/>Obstacle2</div>
+            </div>
+        </div>
+        <div>
+            <div id="tips">
+                <span id="advice">Tips</span><br>
+                <div id="scrollTips">
+                    <div style="padding: 10px;">
+                        <span class="SampleCode">var 변수명 = document.getElementById('ID명');</span>
+                        <span>
+                            이 코드를 사용하면<br>ID명에 들어간 ID를 가진 문서 객체를 변수에 저장할 수 있습니다. 그리고<br>
+                        </span>
+                        <span class="SampleCode">변수명.style.CSS속성 = 속성에 넣을 값;</span>
+                        <span>
+                            이 코드를 사용하여<br>위에서 저장한 문서 객체의 CSS속성을 조정할 수 있습니다.<br>
+                            이때, CSS속성의 값은 원래 CSS속성 코드에서 <span style="color: rgb(255, 79, 79);">"-"</span>로 처리되어있는 부분을 없애고,<br>
+                            <span style="color: rgb(255, 79, 79);">"-"</span>의 바로 뒤에 나오는 알파벳을 대문자로 바꿔서 넣습니다.<br>
+                            ex)&nbsp;&nbsp;<span class="SampleCode">i.style.backgroundColor = 'red';</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="activity">
+                <div id="run">Run</div><div id="reset">Reset</div>
+                <textarea cols="28" spellcheck="false" id="codeArea" placeholder="write your code here:)"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
